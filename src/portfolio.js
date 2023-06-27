@@ -159,11 +159,11 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "95%"
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -274,6 +274,19 @@ const achievementSection = {
         {
           name: "View Certification",
           url: "https://drive.google.com/file/d/12CglAzmKm-zF_sxYeSGCzzPvD6J9PFdl/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "AWS Cloud Quest: Cloud Practitioner",
+      subtitle:
+        "Completed the AWS Cloud Quest and earned the Cloud Practitioner Badge.",
+      image: require("./assets/images/aws.png"),
+      imageAlt: "AWS Cloud Practitioner Badge",
+      footerLink: [
+        {
+          name: "View Badge",
+          url: "https://www.credly.com/badges/f474a4c6-4b13-425a-aaa4-30d748957ab6/linked_in_profile"
         }
       ]
     }

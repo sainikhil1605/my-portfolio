@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1NluUeqfVPhQ97BxSI1ulGRQIcyCR15B9/view?usp=sharing", // Set to empty to hide the button
+    "https://my-resume-1605.s3.amazonaws.com/Sai-Nikhil-Reddy-Vatti-Resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -260,7 +260,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/12CglAzmKm-zF_sxYeSGCzzPvD6J9PFdl/view?usp=sharing"
+          url: "https://my-resume-1605.s3.amazonaws.com/Infosys+Certification+-+Vatti+Sai+Nikhil.pdf"
         }
       ]
     },

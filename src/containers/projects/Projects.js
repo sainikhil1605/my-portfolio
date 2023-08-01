@@ -4,6 +4,8 @@ import Button from "../../components/button/Button";
 import {openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
+// import response from "../../";
+import response from "../../assets/profile.json";
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
     import("../../components/githubRepoCard/GithubRepoCard")
@@ -16,22 +18,22 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch("/profile.json")
-        .then(result => {
-          if (result.ok) {
-            return result.json();
-          }
-          throw result;
-        })
-        .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
-        })
-        .catch(function (error) {
-          console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
-          );
-          setrepoFunction("Error");
-        });
+      // fetch("./s/profile.json")
+      //   .then(result => {
+      //     if (result.ok) {
+      //       return result.json();
+      //     }
+      //     throw result;
+      //   })
+      //   .then(response => {
+      setrepoFunction(response.data.user.pinnedItems.edges);
+      // })
+      // .catch(function (error) {
+      //   console.error(
+      //     `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
+      //   );
+      //   setrepoFunction("Error");
+      // });
     };
     getRepoData();
   }, []);

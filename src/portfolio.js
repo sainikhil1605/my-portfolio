@@ -278,15 +278,15 @@ const achievementSection = {
       ]
     },
     {
-      title: "AWS Cloud Quest: Cloud Practitioner",
+      title: "AWS Certified Cloud Practitioner",
       subtitle:
         "Completed the AWS Cloud Quest and earned the Cloud Practitioner Badge.",
       image: require("./assets/images/aws.png"),
       imageAlt: "AWS Cloud Practitioner Badge",
       footerLink: [
         {
-          name: "View Badge",
-          url: "https://www.credly.com/badges/f474a4c6-4b13-425a-aaa4-30d748957ab6/linked_in_profile"
+          name: "View Certificate",
+          url: "https://my-resume-1605.s3.amazonaws.com/AWS+Certified+Cloud+Practitioner+certificate.pdf"
         }
       ]
     }

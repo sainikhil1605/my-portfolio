@@ -267,13 +267,13 @@ const achievementSection = {
     {
       title: "NPTEL Certified Python Programmer",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/nptel.jpg"),
-      imageAlt: "Google Assistant Action Logo",
+        "Cleared the NPTEL Certification Exam for Python Programming with 97% marks.",
+      image: require("./assets/images/NPTEL.png"),
+      imageAlt: "NPTEL Logo",
       footerLink: [
         {
           name: "View Certification",
-          url: "https://drive.google.com/file/d/12CglAzmKm-zF_sxYeSGCzzPvD6J9PFdl/view?usp=sharing"
+          url: "https://my-resume-1605.s3.amazonaws.com/NPTEL20CS36S1PC355853.jpg"
         }
       ]
     },

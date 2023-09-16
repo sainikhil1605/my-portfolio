@@ -5,8 +5,12 @@ const NavBar = () => {
   return (
     <NavOuterContainer>
       <NavContainer>
-        <Typography variant="h6">
-          <a>&lt;Sai Nikhil Reddy Vatti {" />"}</a>
+        <Typography variant="h6" className="logo">
+          <a href="/" className="logo">
+            <span className="grey-color"> &lt;</span>
+            <span className="logo-name">Sai Nikhil Reddy</span>
+            <span className="grey-color">/&gt;</span>
+          </a>
         </Typography>
       </NavContainer>
       <NavContainer style={{ flex: "2" }}>

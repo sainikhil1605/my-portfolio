@@ -3,6 +3,8 @@ import "./App.css";
 import Landing from "./components/Landing";
 import { ThemeProvider, createTheme } from "@mui/material";
 import AboutMe from "./components/About";
+import Experience from "./components/Experience";
+import Achievements from "./components/Achievements";
 
 function App() {
   const theme = createTheme({
@@ -11,6 +13,11 @@ function App() {
         defaultProps: {
           fontFamily: "Montserrat",
         },
+        styleOverrides: {
+          h1: {
+            fontSize: "50px",
+          },
+        },
       },
     },
   });
@@ -18,6 +25,8 @@ function App() {
     <ThemeProvider theme={theme}>
       <Landing />
       <AboutMe />
+      <Experience />
+      <Achievements />
     </ThemeProvider>
   );
 }

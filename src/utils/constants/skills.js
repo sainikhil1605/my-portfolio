@@ -1,33 +1,27 @@
-import JSGif from "../../assets/images/JS.gif";
-import ReactGif from "../../assets/images/React.gif";
-import NodeGif from "../../assets/images/Node.gif";
-import MongoGif from "../../assets/images/mongo.gif";
-import HTMLGif from "../../assets/images/HTML.gif";
-import CSSGif from "../../assets/images/CSS.gif";
 const SKILLS = [
   {
     name: "JavaScript",
-    src: JSGif,
+    src: require("../../assets/images/JS.gif"),
   },
   {
     name: "React",
-    src: ReactGif,
+    src: require("../../assets/images/React.gif"),
   },
   {
     name: "Node",
-    src: NodeGif,
+    src: require("../../assets/images/Node.gif"),
   },
   {
     name: "MongoDB",
-    src: MongoGif,
+    src: require("../../assets/images/mongo.gif"),
   },
   {
     name: "HTML",
-    src: HTMLGif,
+    src: require("../../assets/images/HTML.gif"),
   },
   {
     name: "CSS",
-    src: CSSGif,
+    src: require("../../assets/images/CSS.gif"),
   },
 ];
 

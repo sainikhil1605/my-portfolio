@@ -8,6 +8,26 @@ const NavOuterContainer = styled("div")({
   position: "relative",
   zIndex: "1",
   color: "black",
+  ".menu-icon": {
+    "@media (max-width: 1200px)": {
+      display: "block",
+    },
+    "@media(min-width:1200px)": {
+      display: "none",
+    },
+  },
+  ".nav-list": {
+    "@media(max-width:1200px)": {
+      flexDirection: "column",
+      display: "none",
+    },
+  },
+  ".mobile-nav": {
+    "@media(min-width:1200px)": {
+      flexDirection: "column",
+      display: "none",
+    },
+  },
 });
 const NavContainer = styled("div")({
   display: "flex",

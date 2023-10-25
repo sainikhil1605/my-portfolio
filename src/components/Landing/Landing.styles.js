@@ -6,12 +6,19 @@ const LandingContainer = styled("div")({
   margin: "20px",
   color: "black",
   textAlign: "left",
+  "@media(max-width:768px)": {
+    flexDirection: "column",
+    margin: "0px",
+  },
 });
 const LandingHeroImg = styled("div")({
   display: "flex",
   "& img": {
-    maxWidth: "650px",
+    maxWidth: "100%",
   },
+  // "& img": {
+  //   maxWidth: "650px",
+  // },
 });
 const LandingWave = styled("div")({
   position: "absolute",
@@ -50,6 +57,10 @@ const LandingLabel = styled("div")({
   },
   "& .wave-emoji>img": {
     borderRadius: "50%",
+  },
+  "@media(max-width:768px)": {
+    alignItems: "center",
+    textAlign: "center",
   },
 });
 const LandingIcons = styled("div")({

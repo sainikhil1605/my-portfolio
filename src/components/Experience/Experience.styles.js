@@ -17,12 +17,21 @@ const ExperienceCards = styled("div")({
   display: "flex",
   padding: "20px",
   justifyContent: "space-between",
+  "@media(max-width:768px)": {
+    flexDirection: "column",
+    alignItems: "center !important",
+  },
+
   // alignItems: "stretch",
   "& .MuiCard-root": {
     flex: "1",
   },
   "& .experience-card": {
     maxWidth: "380px",
+    "@media(max-width:768px)": {
+      marginTop: "20px",
+    },
+
     // alignSelf: "flex-start",
   },
   "& .experience-card-header": {

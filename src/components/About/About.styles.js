@@ -18,7 +18,7 @@ const AboutDetails = styled("div")({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  margin: "20px",
+
   "@media(max-width:768px)": {
     flexDirection: "column",
   },
@@ -28,6 +28,7 @@ const AboutDescription = styled("div")({
   fontSize: "20px",
   maxWidth: "500px",
   flexDirection: "column",
+  margin: "20px",
 });
 
 const AboutPicture = styled("div")({

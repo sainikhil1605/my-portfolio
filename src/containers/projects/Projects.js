@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
+import {mobileApps, openSource, socialMediaLinks} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
 // import response from "../../";
@@ -15,7 +15,7 @@ export default function Projects() {
   const [repo, setrepo] = useState([]);
   // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
-
+  const imgRef = React.createRef();
   useEffect(() => {
     const getRepoData = () => {
       // fetch("./s/profile.json")
@@ -37,7 +37,14 @@ export default function Projects() {
     };
     getRepoData();
   }, []);
-
+  function openUrlInNewTab(url, name) {
+    if (!url) {
+      console.log(`URL for ${name} not found`);
+      return;
+    }
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
   function setrepoFunction(array) {
     setrepo(array);
   }
@@ -47,6 +54,57 @@ export default function Projects() {
   ) {
     return (
       <Suspense fallback={renderLoader()}>
+        <div className="main" id="mobileapps">
+          <h1 className="project-title">Mobile Apps</h1>
+          <div className="repo-cards-div-main">
+            {mobileApps.projects.map(app => {
+              return (
+                <div
+                  className={
+                    isDark ? "dark-mode certificate-card" : "certificate-card"
+                  }
+                >
+                  <div className="mobile-apps-image-div">
+                    <img
+                      src={app.image}
+                      alt={app.projectName || "Card Thumbnail"}
+                      className="card-image"
+                    ></img>
+                  </div>
+                  <div className="certificate-detail-div">
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {app.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {app.projectDesc}
+                    </p>
+                  </div>
+                  <div className="certificate-card-footer">
+                    <span
+                      className={
+                        isDark ? "dark-mode certificate-tag" : "certificate-tag"
+                      }
+                      onClick={() =>
+                        openUrlInNewTab(
+                          app.projectLink.link,
+                          app.projectLink.name
+                        )
+                      }
+                    >
+                      {app.projectLink.name}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
         <div className="main" id="opensource">
           <h1 className="project-title">Open Source Projects</h1>
           <div className="repo-cards-div-main">

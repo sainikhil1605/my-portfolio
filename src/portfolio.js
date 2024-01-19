@@ -213,7 +213,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Open Source Projects",
   subtitle: "Open source projects that I have contributed to",
   projects: [
     {
@@ -232,7 +232,30 @@ const bigProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
+const mobileApps = {
+  projects: [
+    {
+      image: require("./assets/images/journal-app.gif"),
+      projectName: "Journal App",
+      projectDesc:
+        "A journal taking app build using React Native where user can add Image and Text to their journal. User can add location for a journal",
+      projectLink: {
+        name: "View Code",
+        url: "https://github.com/sainikhil1605/journal-app"
+      }
+    },
+    {
+      image: require("./assets/images/buddies-app.png"),
+      projectName: "Buddies App",
+      projectDesc:
+        "A social media app build using React Native where user can add posts, like, comment and share the posts. User can also add friends and chat with them",
+      projectLink: {
+        name: "View Code",
+        url: "https://github.com/sainikhil1605/buddies-social-app"
+      }
+    }
+  ]
+};
 // Achievement Section
 // Include certificates, talks etc
 
@@ -374,5 +397,6 @@ export {
   podcastSection,
   contactInfo,
   twitterDetails,
-  isHireable
+  isHireable,
+  mobileApps
 };

@@ -92,7 +92,7 @@ export default function Projects() {
                       }
                       onClick={() =>
                         openUrlInNewTab(
-                          app.projectLink.link,
+                          app.projectLink.url,
                           app.projectLink.name
                         )
                       }

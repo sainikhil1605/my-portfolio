@@ -178,26 +178,24 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Sureify",
       companylogo: require("./assets/images/sureify.jpg"),
-      date: "July 2021 – Aug 2022",
+      date: "Feb 2021 – Aug 2022",
       desc: "Contributed to the front-end development of web applications for some of the leading life insurance companies in the United States.",
       descBullets: [
         "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
         "Enhanced the accessibility of the UI elements by migrating the webApp from legacy frameworks to the Material UI."
       ]
     },
-    {
-      role: "Software Egineer Intern",
-      company: "Sureify",
-      companylogo: require("./assets/images/sureify.jpg"),
-      date: "March 2021 – July 2021",
-      desc: "As an intern my main responsibility was to learn the technologies used in the company in the short span given."
-    },
+
     {
       role: "Programmer Analyst Intern",
       company: "Cognizant",
       companylogo: require("./assets/images/cognizant.webp"),
-      date: "Nov 2020 – March 2021",
-      desc: "Received comprehensive training in React, SQL, Java, and Spring Boot technologies."
+      date: "Aug 2020 – Feb 2021",
+      descBullets: [
+        "Received comprehensive training in React, SQL, Java, and Spring Boot technologies.",
+        "Utilized Spring Boot API and MySQL to develop a Movie ticket booking system, incorporating unit test cases using Junit for quality assurance.",
+        "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development and problem-solving skills."
+      ]
     }
   ]
 };

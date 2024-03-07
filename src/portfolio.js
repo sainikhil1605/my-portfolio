@@ -187,7 +187,7 @@ const workExperiences = {
     },
 
     {
-      role: "Programmer Analyst Intern",
+      role: "Programmer Analyst",
       company: "Cognizant",
       companylogo: require("./assets/images/cognizant.webp"),
       date: "Aug 2020 – Feb 2021",

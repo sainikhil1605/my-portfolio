@@ -1,7 +1,12 @@
 import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import {mobileApps, openSource, socialMediaLinks} from "../../portfolio";
+import {
+  chromeExtensions,
+  mobileApps,
+  openSource,
+  socialMediaLinks
+} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import Loading from "../../containers/loading/Loading";
 // import response from "../../";
@@ -105,8 +110,59 @@ export default function Projects() {
             })}
           </div>
         </div>
+        <div className="main" id="mobileapps">
+          <h1 className="project-title">Chrome Extensions</h1>
+          <div className="repo-cards-div-main">
+            {chromeExtensions.projects.map(app => {
+              return (
+                <div
+                  className={
+                    isDark ? "dark-mode certificate-card" : "certificate-card"
+                  }
+                >
+                  <div className="mobile-apps-image-div">
+                    <img
+                      src={app.image}
+                      alt={app.projectName || "Card Thumbnail"}
+                      className="card-image"
+                    ></img>
+                  </div>
+                  <div className="certificate-detail-div">
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {app.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {app.projectDesc}
+                    </p>
+                  </div>
+                  <div className="certificate-card-footer">
+                    <span
+                      className={
+                        isDark ? "dark-mode certificate-tag" : "certificate-tag"
+                      }
+                      onClick={() =>
+                        openUrlInNewTab(
+                          app.projectLink.url,
+                          app.projectLink.name
+                        )
+                      }
+                    >
+                      {app.projectLink.name}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
         <div className="main" id="opensource">
-          <h1 className="project-title">Open Source Projects</h1>
+          <h1 className="project-title">My Best Projects</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {

@@ -254,6 +254,21 @@ const mobileApps = {
     }
   ]
 };
+// Chrome Extension
+const chromeExtensions = {
+  projects: [
+    {
+      image: require("./assets/images/apply-ease.jpeg"),
+      projectName: "Apply Ease",
+      projectDesc:
+        "A chrome extension that helps users to apply for multiple jobs at once by filling the common details in the job application form.",
+      projectLink: {
+        name: "View Code",
+        url: "https://github.com/sainikhil1605/ApplyEase"
+      }
+    }
+  ]
+};
 // Achievement Section
 // Include certificates, talks etc
 
@@ -396,5 +411,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  mobileApps
+  mobileApps,
+  chromeExtensions
 };

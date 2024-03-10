@@ -258,7 +258,7 @@ const mobileApps = {
 const chromeExtensions = {
   projects: [
     {
-      image: require("./assets/images/apply-ease.jpeg"),
+      image: require("./assets/images/apply-ease.jpg"),
       projectName: "Apply Ease",
       projectDesc:
         "A chrome extension that helps users to apply for multiple jobs at once by filling the common details in the job application form.",

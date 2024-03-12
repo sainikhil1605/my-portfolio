@@ -44,6 +44,13 @@ export default function Greeting() {
                   <Button
                     text="See my resume"
                     newTab={true}
+                    onClick={() => {
+                      // eslint-disable-next-line no-undef
+                      gtag("event", "click", {
+                        event_category: "Resume",
+                        event_label: "See my resume link clicked"
+                      });
+                    }}
                     href={greeting.resumeLink}
                   />
                 )}

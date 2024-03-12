@@ -4,6 +4,7 @@ import Button from "../../components/button/Button";
 import {
   chromeExtensions,
   mobileApps,
+  npmPackages,
   openSource,
   socialMediaLinks
 } from "../../portfolio";
@@ -114,6 +115,57 @@ export default function Projects() {
           <h1 className="project-title">Chrome Extensions</h1>
           <div className="repo-cards-div-main">
             {chromeExtensions.projects.map(app => {
+              return (
+                <div
+                  className={
+                    isDark ? "dark-mode certificate-card" : "certificate-card"
+                  }
+                >
+                  <div className="mobile-apps-image-div">
+                    <img
+                      src={app.image}
+                      alt={app.projectName || "Card Thumbnail"}
+                      className="card-image"
+                    ></img>
+                  </div>
+                  <div className="certificate-detail-div">
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {app.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {app.projectDesc}
+                    </p>
+                  </div>
+                  <div className="certificate-card-footer">
+                    <span
+                      className={
+                        isDark ? "dark-mode certificate-tag" : "certificate-tag"
+                      }
+                      onClick={() =>
+                        openUrlInNewTab(
+                          app.projectLink.url,
+                          app.projectLink.name
+                        )
+                      }
+                    >
+                      {app.projectLink.name}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="main" id="mobileapps">
+          <h1 className="project-title">NPM Packages</h1>
+          <div className="repo-cards-div-main">
+            {npmPackages.projects.map(app => {
               return (
                 <div
                   className={

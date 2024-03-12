@@ -269,6 +269,21 @@ const chromeExtensions = {
     }
   ]
 };
+// NPM Packages
+const npmPackages = {
+  projects: [
+    {
+      image: require("./assets/images/authNinjaLogo.png"),
+      projectName: "Auth Ninja",
+      projectDesc:
+        "Auth Ninja is a powerful and intuitive authentication middleware for Node.js, designed to simplify the implementation of secure authentication processes in web applications",
+      projectLink: {
+        name: "Coming Soon...",
+        url: ""
+      }
+    }
+  ]
+};
 // Achievement Section
 // Include certificates, talks etc
 
@@ -412,5 +427,6 @@ export {
   twitterDetails,
   isHireable,
   mobileApps,
-  chromeExtensions
+  chromeExtensions,
+  npmPackages
 };

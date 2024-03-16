@@ -6,6 +6,7 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import ReactGA from "react-ga4";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
@@ -46,9 +47,9 @@ export default function Greeting() {
                     newTab={true}
                     onClick={() => {
                       // eslint-disable-next-line no-undef
-                      gtag("event", "click", {
-                        event_category: "Resume",
-                        event_label: "See my resume link clicked"
+                      ReactGA.event({
+                        category: "See Resume Button Click",
+                        label: "See my resume link clicked"
                       });
                     }}
                     href={greeting.resumeLink}

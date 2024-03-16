@@ -48,7 +48,7 @@ export default function Greeting() {
                     onClick={() => {
                       // eslint-disable-next-line no-undef
                       ReactGA.event({
-                        category: "See Resume Button Click",
+                        category: "resume_click",
                         label: "See my resume link clicked"
                       });
                     }}

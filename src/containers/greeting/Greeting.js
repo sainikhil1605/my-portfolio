@@ -10,7 +10,7 @@ import ReactGA from "react-ga4";
 
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
-import ManonTable from "../../assets/images/manOnTable.svg";
+import ProgressiveApp from "../../assets/images/progressiveApp.svg";
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
@@ -63,7 +63,7 @@ export default function Greeting() {
             {/* {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : ( */}
-            <img alt="man sitting on table" src={ManonTable}></img>
+            <img alt="man sitting on table" src={ProgressiveApp}></img>
             {/* )} */}
           </div>
         </div>

@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -175,6 +175,12 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineer Intern",
+      company: "Gibber",
+      companylogo: require("./assets/images/gibber.png"),
+      date: "March 2024 - Present"
+    },
+    {
       role: "Software Engineer",
       company: "Sureify",
       companylogo: require("./assets/images/sureify.jpg"),
@@ -261,7 +267,7 @@ const chromeExtensions = {
       image: require("./assets/images/applyEase.png"),
       projectName: "Apply Ease",
       projectDesc:
-        "A chrome extension that helps users to apply for multiple jobs at once by filling the common details in the job application form.",
+        "A chrome extension that can autofill the job application form with user's details and for custom questions such as 'Why are you interested in this company?', the extension sends the job description and application question to the Node server. There, it parses the user's resume and sends both the resume and the questions to the OpenAI API to generate a tailored answer, which is then autofilled in the text area. ",
       projectLink: {
         name: "View Code",
         url: "https://github.com/sainikhil1605/ApplyEase"

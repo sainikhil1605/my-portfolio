@@ -39,19 +39,20 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
+          <li>
+            <a href="#mobile-apps">Mobile Apps</a>
+          </li>
+          <li>
+            <a href="#chrome-extensions">Chrome Extensions</a>
+          </li>
+          {viewOpenSource && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#opensource">Projects</a>
             </li>
           )}
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
-            </li>
-          )}
-          {viewOpenSource && (
-            <li>
-              <a href="#opensource">Open Source</a>
             </li>
           )}
           {viewAchievement && (

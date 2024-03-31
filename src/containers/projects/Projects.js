@@ -60,7 +60,7 @@ export default function Projects() {
   ) {
     return (
       <Suspense fallback={renderLoader()}>
-        <div className="main" id="mobileapps">
+        <div className="main" id="mobile-apps">
           <h1 className="project-title">Mobile Apps</h1>
           <div className="repo-cards-div-main">
             {mobileApps.projects.map(app => {
@@ -111,9 +111,9 @@ export default function Projects() {
             })}
           </div>
         </div>
-        <div className="main" id="mobileapps">
+        <div className="main" id="chrome-extensions">
           <h1 className="project-title">Chrome Extensions</h1>
-          <div className="repo-cards-div-main">
+          <div className="chrome-cards-div-main">
             {chromeExtensions.projects.map(app => {
               return (
                 <div
@@ -162,7 +162,7 @@ export default function Projects() {
             })}
           </div>
         </div>
-        <div className="main" id="mobileapps">
+        <div className="main" id="npm-packages">
           <h1 className="project-title">NPM Packages</h1>
           <div className="repo-cards-div-main">
             {npmPackages.projects.map(app => {

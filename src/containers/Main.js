@@ -19,6 +19,7 @@ import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+import GitHubCalendar from "react-github-calendar";
 import "./Main.scss";
 
 const Main = () => {
@@ -58,6 +59,27 @@ const Main = () => {
 
             <Projects />
             <StartupProject />
+            <div
+              style={{
+                marginTop: "50px",
+                display: "flex",
+                flexDirection: "column",
+
+                alignItems: "center"
+              }}
+            >
+              <h1 className="project-heading" style={{paddingBottom: "20px"}}>
+                Days I <strong className="purple">Code</strong>
+              </h1>
+              <GitHubCalendar
+                username="sainikhil1605"
+                blockSize={15}
+                blockMargin={5}
+                color="#c084f5"
+                fontSize={16}
+              />
+            </div>
+
             <WorkExperience />
             <Achievement />
             <Blogs />

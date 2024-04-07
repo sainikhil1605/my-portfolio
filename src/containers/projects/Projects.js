@@ -194,34 +194,40 @@ export default function Projects() {
                     </p>
                   </div>
                   <div className="certificate-card-footer">
-                    <span
-                      className={
-                        isDark ? "dark-mode certificate-tag" : "certificate-tag"
-                      }
-                      onClick={() =>
-                        openUrlInNewTab(
-                          app.projectLink.url,
-                          app.projectLink.name
-                        )
-                      }
-                    >
-                      {app.projectLink.name}
-                    </span>
-                  </div>
-                  <div className="certificate-card-footer">
-                    <span
-                      className={
-                        isDark ? "dark-mode certificate-tag" : "certificate-tag"
-                      }
-                      onClick={() =>
-                        openUrlInNewTab(
-                          app.projectLink.registryLink,
-                          "View Package on NPM Registery"
-                        )
-                      }
-                    >
-                      View in NPM Registery
-                    </span>
+                    <div>
+                      <span
+                        className={
+                          isDark
+                            ? "dark-mode certificate-tag"
+                            : "certificate-tag"
+                        }
+                        onClick={() =>
+                          openUrlInNewTab(
+                            app.projectLink.url,
+                            app.projectLink.name
+                          )
+                        }
+                      >
+                        {app.projectLink.name}
+                      </span>
+                    </div>
+                    <div>
+                      <span
+                        className={
+                          isDark
+                            ? "dark-mode certificate-tag"
+                            : "certificate-tag"
+                        }
+                        onClick={() =>
+                          openUrlInNewTab(
+                            app.projectLink.registryLink,
+                            "View Package on NPM Registery"
+                          )
+                        }
+                      >
+                        View in NPM Registery
+                      </span>
+                    </div>
                   </div>
                 </div>
               );

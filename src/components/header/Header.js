@@ -45,6 +45,9 @@ function Header() {
           <li>
             <a href="#chrome-extensions">Chrome Extensions</a>
           </li>
+          <li>
+            <a href="#npm-packages">NPM Packages</a>
+          </li>
           {viewOpenSource && (
             <li>
               <a href="#opensource">Projects</a>

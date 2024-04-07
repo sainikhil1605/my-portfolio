@@ -279,13 +279,14 @@ const chromeExtensions = {
 const npmPackages = {
   projects: [
     {
-      image: require("./assets/images/authNinjaLogo.png"),
-      projectName: "Auth Ninja",
+      image: require("./assets/images/auth-zen.webp"),
+      projectName: "Auth Zen",
       projectDesc:
-        "Auth Ninja is a powerful and intuitive authentication middleware for Node.js, designed to simplify the implementation of secure authentication processes in web applications",
+        "Auth Zen is a powerful and intuitive authentication middleware for Node.js, designed to simplify the implementation of secure authentication processes in web applications. It provides developers with an intuitive and straightforward authentication middleware, ensuring robust security without the complexity.",
       projectLink: {
-        name: "Coming Soon...",
-        url: ""
+        name: "View Code",
+        url: "https://github.com/sainikhil1605/auth-zen",
+        registryLink: "https://www.npmjs.com/package/auth-zen"
       }
     }
   ]

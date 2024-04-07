@@ -208,6 +208,21 @@ export default function Projects() {
                       {app.projectLink.name}
                     </span>
                   </div>
+                  <div className="certificate-card-footer">
+                    <span
+                      className={
+                        isDark ? "dark-mode certificate-tag" : "certificate-tag"
+                      }
+                      onClick={() =>
+                        openUrlInNewTab(
+                          app.projectLink.registryLink,
+                          "View Package on NPM Registery"
+                        )
+                      }
+                    >
+                      View in NPM Registery
+                    </span>
+                  </div>
                 </div>
               );
             })}

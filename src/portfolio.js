@@ -172,7 +172,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer Intern",
@@ -300,31 +300,6 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Infosys Certified Software Programmer",
-      subtitle: "Certified as Software Programer from Infosys.",
-      image: require("./assets/images/infytq.png"),
-      imageAlt: "Infytq Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://my-resume-1605.s3.amazonaws.com/Infosys+Certification+-+Vatti+Sai+Nikhil.pdf"
-        }
-      ]
-    },
-    {
-      title: "NPTEL Certified Python Programmer",
-      subtitle:
-        "Cleared the NPTEL Certification Exam for Python Programming with 97% marks.",
-      image: require("./assets/images/NPTEL.png"),
-      imageAlt: "NPTEL Logo",
-      footerLink: [
-        {
-          name: "View Certification",
-          url: "https://my-resume-1605.s3.amazonaws.com/NPTEL20CS36S1PC355853.jpg"
-        }
-      ]
-    },
-    {
       title: "AWS Certified Cloud Practitioner",
       subtitle:
         "Completed the AWS Cloud Quest and earned the Cloud Practitioner Badge.",
@@ -362,7 +337,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections

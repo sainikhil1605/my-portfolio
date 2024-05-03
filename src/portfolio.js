@@ -172,20 +172,21 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer Intern",
-      company: "Gibber",
-      companylogo: require("./assets/images/gibber.png"),
-      date: "March 2024 - Present"
+      role: "Full Stack Developer",
+      company: "eIQdigital",
+      companylogo: require("./assets/images/eiqdigital.jpeg"),
+      desc:"Houston, TX",
+      date: "May 2024 - Present"
     },
     {
       role: "Software Engineer",
       company: "Sureify",
       companylogo: require("./assets/images/sureify.jpg"),
-      date: "Feb 2021 – Aug 2022",
-      desc: "Contributed to the front-end development of web applications for some of the leading life insurance companies in the United States.",
+      date: "March 2021 – Aug 2022",
+      desc: "Hyderabad, India",
       descBullets: [
         "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
         "Enhanced the accessibility of the UI elements by migrating the webApp from legacy frameworks to the Material UI."
@@ -196,7 +197,7 @@ const workExperiences = {
       role: "Programmer Analyst",
       company: "Cognizant",
       companylogo: require("./assets/images/cognizant.webp"),
-      date: "Aug 2020 – Feb 2021",
+      date: "Hyderabad, India",
       descBullets: [
         "Received comprehensive training in React, SQL, Java, and Spring Boot technologies.",
         "Utilized Spring Boot API and MySQL to develop a Movie ticket booking system, incorporating unit test cases using Junit for quality assurance.",
@@ -251,8 +252,7 @@ const mobileApps = {
     {
       image: require("./assets/images/buddies-app.png"),
       projectName: "Buddies App",
-      projectDesc:
-        "A social media app build using React Native where user can add posts, like, comment and share the posts. User can also add friends and chat with them",
+      projectDesc:"Buddies is a dynamic social media platform built with React Native and Node.js, leveraging microservices architecture to deliver a seamless and scalable user experience for connecting and sharing with friends.",
       projectLink: {
         name: "View Code",
         url: "https://github.com/sainikhil1605/buddies-social-app"

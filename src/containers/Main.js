@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -27,6 +27,7 @@ const Main = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
+  const iframeRef=useRef();
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -39,18 +40,62 @@ const Main = () => {
       };
     }
   }, []);
+  useEffect(() => {
+    // Function to handle clicking outside the iframe
+    function handleClickOutside(event) {
+        if (iframeRef.current && !iframeRef.current.contains(event.target)) {
+            setShowIframe(false);  // Hide the iframe
+        }
+    }
 
+    // Add the event listener
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+        // Clean up the event listener
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+}, [iframeRef]);
   const changeTheme = () => {
     setIsDark(!isDark);
   };
-
+  const [showIframe, setShowIframe] = useState(false);
+  const [iframeUrl, setIframe] = useState("");
+  const setIframeUrl = (url) => {
+    window.scrollTo(0, 0,{behavior:"smooth"});
+    setIframe(url);
+  }
   return (
     <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
+      <StyleProvider
+        value={{
+          isDark: isDark,
+          changeTheme: changeTheme,
+          setIframeUrl,
+          setShowIframe
+        }}
+      >
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
           <>
+            {showIframe && (
+              <div style={{width:"100%",display:"flex",justifyContent:"center"}} ref={iframeRef}>
+              <iframe
+                style={{
+                  top: 0,
+                  position: "absolute",
+                  zIndex: 1000,
+                  margin: "auto",
+                  backgroundColor: "gray",
+                }}
+                src={iframeUrl}
+                title="Achievement"
+                width="80%"
+                height="100%"
+              ></iframe>
+              </div>
+            
+            )}
             <Header />
             <Greeting />
             <Skills />

@@ -89,10 +89,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "Spring",
-      fontAwesomeClassname: "fab fa-spring"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
@@ -178,7 +174,7 @@ const workExperiences = {
       role: "Full Stack Developer",
       company: "eIQdigital",
       companylogo: require("./assets/images/eiqdigital.jpeg"),
-      desc:"Houston, TX",
+      desc: "Houston, TX",
       date: "May 2024 - Present"
     },
     {
@@ -252,7 +248,8 @@ const mobileApps = {
     {
       image: require("./assets/images/buddies-app.png"),
       projectName: "Buddies App",
-      projectDesc:"Buddies is a dynamic social media platform built with React Native and Node.js, leveraging microservices architecture to deliver a seamless and scalable user experience for connecting and sharing with friends.",
+      projectDesc:
+        "Buddies is a dynamic social media platform built with React Native and Node.js, leveraging microservices architecture to deliver a seamless and scalable user experience for connecting and sharing with friends.",
       projectLink: {
         name: "View Code",
         url: "https://github.com/sainikhil1605/buddies-social-app"
@@ -310,6 +307,18 @@ const achievementSection = {
         {
           name: "View Certificate",
           url: "https://my-resume-1605.s3.amazonaws.com/AWS+Certified+Cloud+Practitioner+certificate.pdf"
+        }
+      ]
+    },
+    {
+      title: "Infosys Certified Software Programmer",
+      subtitle: "Certified as Software Programer from Infosys.",
+      image: require("./assets/images/infytq.png"),
+      imageAlt: "Infytq Logo",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://my-resume-1605.s3.amazonaws.com/Infosys+Certification+-+Vatti+Sai+Nikhil.pdf"
         }
       ]
     }

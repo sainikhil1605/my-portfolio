@@ -117,3 +117,24 @@
     width: auto;
   }
 }
+span.certificate-tag {
+  background: $buttonColor;
+  color: $lightBackground3;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 13px 22px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  text-transform: uppercase;
+}
+span.certificate-tag:hover {
+  background: $buttonHover;
+}

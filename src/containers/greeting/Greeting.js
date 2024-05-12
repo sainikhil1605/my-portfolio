@@ -13,6 +13,7 @@ import StyleContext from "../../contexts/StyleContext";
 import ProgressiveApp from "../../assets/images/progressiveApp.svg";
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+  const {setShowIframe, setIframeUrl} = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -42,9 +43,10 @@ export default function Greeting() {
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
-                  <Button
+                  <span
                     text="See my resume"
                     newTab={true}
+                    className="main-button"
                     onClick={() => {
                       // eslint-disable-next-line no-undef
                       ReactGA.event({
@@ -52,9 +54,12 @@ export default function Greeting() {
                         action: "resume_clicked",
                         label: "See my resume link clicked"
                       });
+                      setShowIframe(true);
+                      setIframeUrl(greeting.resumeLink);
                     }}
-                    href={greeting.resumeLink}
-                  />
+                  >
+                    See My Resume
+                  </span>
                 )}
               </div>
             </div>

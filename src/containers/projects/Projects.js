@@ -1,7 +1,8 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
+import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
 import {
+  chatBots,
   chromeExtensions,
   mobileApps,
   npmPackages,
@@ -20,7 +21,7 @@ export default function Projects() {
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
   // todo: remove useContex because is not supported
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const imgRef = React.createRef();
   useEffect(() => {
     const getRepoData = () => {
@@ -156,6 +157,62 @@ export default function Projects() {
                     >
                       {app.projectLink.name}
                     </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div className="main" id="npm-packages">
+          <h1 className="project-title">Chatbots</h1>
+          <div className="repo-cards-div-main">
+            {chatBots.projects.map(app => {
+              return (
+                <div
+                  className={
+                    isDark ? "dark-mode certificate-card" : "certificate-card"
+                  }
+                >
+                  <div className="mobile-apps-image-div">
+                    <img
+                      src={app.image}
+                      alt={app.projectName || "Card Thumbnail"}
+                      className="card-image"
+                    ></img>
+                  </div>
+                  <div className="certificate-detail-div">
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {app.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {app.projectDesc}
+                    </p>
+                  </div>
+                  <div className="certificate-card-footer">
+                    <div>
+                      <span
+                        className={
+                          isDark
+                            ? "dark-mode certificate-tag"
+                            : "certificate-tag"
+                        }
+                        onClick={() =>
+                          openUrlInNewTab(
+                            app.projectLink.url,
+                            app.projectLink.name
+                          )
+                        }
+                      >
+                        {app.projectLink.name}
+                      </span>
+                    </div>
+
                   </div>
                 </div>
               );

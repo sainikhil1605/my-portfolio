@@ -272,6 +272,20 @@ const chromeExtensions = {
     }
   ]
 };
+const chatBots = {
+  projects: [
+    {
+      image: require("./assets/images/Stark-ai.webp"),
+      projectName: "Stark: Intelligent Travel Assistant",
+      projectDesc:
+        "Stark is a cutting-edge chatbot designed to assist travelers in finding the most economical flight options. Built using Hume AI, Stark supports both voice and text interactions, providing audio outputs for a more engaging user experience. Its ability to recognize human emotions and handle interruptions seamlessly makes it not just a tool, but a responsive and empathetic travel companion. Whether you're chatting or speaking, Stark understands your needs and guides you effortlessly through your travel planning.",
+      projectLink: {
+        name: "View Code",
+        url: "https://github.com/sainikhil1605/stark-ai"
+      }
+    }
+  ]
+}
 // NPM Packages
 const npmPackages = {
   projects: [
@@ -419,5 +433,6 @@ export {
   isHireable,
   mobileApps,
   chromeExtensions,
-  npmPackages
+  npmPackages,
+  chatBots
 };

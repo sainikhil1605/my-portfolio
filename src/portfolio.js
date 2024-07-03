@@ -264,16 +264,26 @@ const chromeExtensions = {
       image: require("./assets/images/applyEase.png"),
       projectName: "Apply Ease",
       projectDesc:
-        "A chrome extension that can autofill the job application form with user's details and for custom questions such as 'Why are you interested in this company?', the extension sends the job description and application question to the Node server. There, it parses the user's resume and sends both the resume and the questions to the OpenAI API to generate a tailored answer, which is then autofilled in the text area. ",
+        "A chrome extension that can autofill the job application form with user's details and for custom questions such as 'Why are you interested in this company?', the extension sends the job description and application question to the Node server. There, it parses the user's resume and sends both the resume and the questions to the OpenAI API to generate a tailored answer, which is then autofilled in the text area. With customizable rules and real-time notifications, CodeSage enhances development efficiency and maintains high coding standards.",
       projectLink: {
         name: "View Code",
-        url: "https://github.com/sainikhil1605/ApplyEase"
+        url: "https://github.com/sainikhil1605/codesage"
       }
     }
   ]
 };
 const chatBots = {
   projects: [
+    {
+      image: require("./assets/images/codesage.webp"),
+      projectName: "CodeSage",
+      projectDesc:
+        "CodeSage is an advanced automated code review system designed to seamlessly integrate with GitHub and utilize AWS for scalable performance. Leveraging OpenAI, it provides intelligent, real-time feedback on pull requests, ensuring code quality and consistency. ",
+      projectLink: {
+        name: "View Code",
+        url: "https://github.com/sainikhil1605/stark-ai"
+      }
+    },
     {
       image: require("./assets/images/Stark-ai.webp"),
       projectName: "Stark: Intelligent Travel Assistant",

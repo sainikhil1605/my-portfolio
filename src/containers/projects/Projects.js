@@ -61,6 +61,62 @@ export default function Projects() {
   ) {
     return (
       <Suspense fallback={renderLoader()}>
+        <div className="main" id="npm-packages">
+          <h1 className="project-title">AI Powered Apps</h1>
+          <div className="repo-cards-div-main">
+            {chatBots.projects.map(app => {
+              return (
+                <div
+                  className={
+                    isDark ? "dark-mode certificate-card" : "certificate-card"
+                  }
+                >
+                  <div className="mobile-apps-image-div">
+                    <img
+                      src={app.image}
+                      alt={app.projectName || "Card Thumbnail"}
+                      className="card-image"
+                    ></img>
+                  </div>
+                  <div className="certificate-detail-div">
+                    <h5
+                      className={isDark ? "dark-mode card-title" : "card-title"}
+                    >
+                      {app.projectName}
+                    </h5>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    >
+                      {app.projectDesc}
+                    </p>
+                  </div>
+                  <div className="certificate-card-footer">
+                    <div>
+                      <span
+                        className={
+                          isDark
+                            ? "dark-mode certificate-tag"
+                            : "certificate-tag"
+                        }
+                        onClick={() =>
+                          openUrlInNewTab(
+                            app.projectLink.url,
+                            app.projectLink.name
+                          )
+                        }
+                      >
+                        {app.projectLink.name}
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
         <div className="main" id="mobile-apps">
           <h1 className="project-title">Mobile Apps</h1>
           <div className="repo-cards-div-main">
@@ -163,62 +219,7 @@ export default function Projects() {
             })}
           </div>
         </div>
-        <div className="main" id="npm-packages">
-          <h1 className="project-title">Chatbots</h1>
-          <div className="repo-cards-div-main">
-            {chatBots.projects.map(app => {
-              return (
-                <div
-                  className={
-                    isDark ? "dark-mode certificate-card" : "certificate-card"
-                  }
-                >
-                  <div className="mobile-apps-image-div">
-                    <img
-                      src={app.image}
-                      alt={app.projectName || "Card Thumbnail"}
-                      className="card-image"
-                    ></img>
-                  </div>
-                  <div className="certificate-detail-div">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
-                      {app.projectName}
-                    </h5>
-                    <p
-                      className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
-                      }
-                    >
-                      {app.projectDesc}
-                    </p>
-                  </div>
-                  <div className="certificate-card-footer">
-                    <div>
-                      <span
-                        className={
-                          isDark
-                            ? "dark-mode certificate-tag"
-                            : "certificate-tag"
-                        }
-                        onClick={() =>
-                          openUrlInNewTab(
-                            app.projectLink.url,
-                            app.projectLink.name
-                          )
-                        }
-                      >
-                        {app.projectLink.name}
-                      </span>
-                    </div>
 
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
         <div className="main" id="npm-packages">
           <h1 className="project-title">NPM Packages</h1>
           <div className="repo-cards-div-main">

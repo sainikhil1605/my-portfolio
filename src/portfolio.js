@@ -281,7 +281,7 @@ const chatBots = {
         "CodeSage is an advanced automated code review system designed to seamlessly integrate with GitHub and utilize AWS for scalable performance. Leveraging OpenAI, it provides intelligent, real-time feedback on pull requests, ensuring code quality and consistency. ",
       projectLink: {
         name: "View Code",
-        url: "https://github.com/sainikhil1605/stark-ai"
+        url: "https://github.com/sainikhil1605/codesage"
       }
     },
     {

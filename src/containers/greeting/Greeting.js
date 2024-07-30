@@ -1,5 +1,5 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, { useContext } from "react";
+import { Fade } from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
@@ -8,12 +8,12 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import ReactGA from "react-ga4";
 
-import {illustration, greeting} from "../../portfolio";
+import { illustration, greeting } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import ProgressiveApp from "../../assets/images/progressiveApp.svg";
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
-  const {setShowIframe, setIframeUrl} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
+  const { setShowIframe, setIframeUrl } = useContext(StyleContext);
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -54,8 +54,14 @@ export default function Greeting() {
                         action: "resume_clicked",
                         label: "See my resume link clicked"
                       });
-                      setShowIframe(true);
-                      setIframeUrl(greeting.resumeLink);
+                      if (window.innerWidth < 768) {
+                        window.open(greeting.resumeLink, "_blank");
+                      } else {
+                        setShowIframe(true);
+                        setIframeUrl(greeting.resumeLink);
+                      }
+
+
                     }}
                   >
                     See My Resume

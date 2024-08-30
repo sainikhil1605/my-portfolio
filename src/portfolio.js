@@ -175,13 +175,18 @@ const workExperiences = {
       company: "eIQdigital",
       companylogo: require("./assets/images/eiqdigital.jpeg"),
       desc: "Houston, TX",
-      date: "May 2024 - Present"
+      date: "May 2024 - Present",
+      descBullets: [
+        'Architected API wrappers with Node.js(Express.js). Implemented a CI/CD pipeline with AWS CodeCommit and AWS CodePipline, reducing deployment times by 30%',
+        'Established a serverless backend infrastructure using AWS Amplify and AWS Cognito for user authentication and dashboards, enhancing system scalability and reducing operational costs by 15%.',
+        'Spearheaded the development of applications for leading energy providers using TypeScript and Next.js, incorporating libraries like MaterialUI, TailwindCSS, Styled Components, and Umi.js, which boosted development efficiency by 20%.'
+      ]
     },
     {
       role: "Software Engineer",
       company: "Sureify",
       companylogo: require("./assets/images/sureify.jpg"),
-      date: "March 2021 – Aug 2022",
+      date: "Apr 2021 – Jul 2022",
       desc: "Hyderabad, India",
       descBullets: [
         "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
@@ -193,10 +198,11 @@ const workExperiences = {
       role: "Programmer Analyst",
       company: "Cognizant",
       companylogo: require("./assets/images/cognizant.webp"),
-      date: "Hyderabad, India",
+      date: "Apr 2020 – Apr 2021",
+      desc: "Hyderabad, India",
       descBullets: [
-        "Received comprehensive training in React, SQL, Java, and Spring Boot technologies.",
-        "Utilized Spring Boot API and MySQL to develop a Movie ticket booking system, incorporating unit test cases using Junit for quality assurance.",
+        "Utilized ASP.NET Core and SQL Server to develop a movie ticket booking system, achieving a 50% reduction in ticket processing time through the implementation of optimized database queries and efficient API endpoints",
+        "Teamed up in the design and execution of a Producer-Consumer application via Azure Service Bus, achieving a 50% enhancement in data processing efficiency",
         "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development and problem-solving skills."
       ]
     }
@@ -322,9 +328,20 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "AWS Certified Solutions Architect",
+
+      image: require("./assets/images/awsSolutionArchitect.png"),
+      imageAlt: "AWS Solutions Architect Badge",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://my-resume-1605.s3.amazonaws.com/AWS+Certified+Solutions+Architect+-+Associate+certificate.pdf"
+        }
+      ]
+    },
+    {
       title: "AWS Certified Cloud Practitioner",
-      subtitle:
-        "Completed the AWS Cloud Quest and earned the Cloud Practitioner Badge.",
+
       image: require("./assets/images/aws.png"),
       imageAlt: "AWS Cloud Practitioner Badge",
       footerLink: [
@@ -336,7 +353,7 @@ const achievementSection = {
     },
     {
       title: "Infosys Certified Software Programmer",
-      subtitle: "Certified as Software Programer from Infosys.",
+
       image: require("./assets/images/infytq.png"),
       imageAlt: "Infytq Logo",
       footerLink: [

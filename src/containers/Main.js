@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
@@ -16,9 +16,9 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen} from "../portfolio";
-import {StyleProvider} from "../contexts/StyleContext";
-import {useLocalStorage} from "../hooks/useLocalStorage";
+import { splashScreen } from "../portfolio";
+import { StyleProvider } from "../contexts/StyleContext";
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import GitHubCalendar from "react-github-calendar";
 import "./Main.scss";
 
@@ -27,7 +27,7 @@ const Main = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
-  const iframeRef=useRef();
+  const iframeRef = useRef();
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -43,25 +43,25 @@ const Main = () => {
   useEffect(() => {
     // Function to handle clicking outside the iframe
     function handleClickOutside(event) {
-        if (iframeRef.current && !iframeRef.current.contains(event.target)) {
-            setShowIframe(false);  // Hide the iframe
-        }
+      if (iframeRef.current && !iframeRef.current.contains(event.target)) {
+        setShowIframe(false);  // Hide the iframe
+      }
     }
 
     // Add the event listener
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
-        // Clean up the event listener
-        document.removeEventListener('mousedown', handleClickOutside);
+      // Clean up the event listener
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-}, [iframeRef]);
+  }, [iframeRef]);
   const changeTheme = () => {
     setIsDark(!isDark);
   };
   const [showIframe, setShowIframe] = useState(false);
   const [iframeUrl, setIframe] = useState("");
   const setIframeUrl = (url) => {
-    window.scrollTo(0, 0,{behavior:"smooth"});
+    window.scrollTo(0, 0, { behavior: "smooth" });
     setIframe(url);
   }
   return (
@@ -79,22 +79,22 @@ const Main = () => {
         ) : (
           <>
             {showIframe && (
-              <div style={{width:"100%",display:"flex",justifyContent:"center"}} ref={iframeRef}>
-              <iframe
-                style={{
-                  top: 0,
-                  position: "absolute",
-                  zIndex: 1000,
-                  margin: "auto",
-                  backgroundColor: "gray",
-                }}
-                src={iframeUrl}
-                title="Achievement"
-                width="80%"
-                height="100%"
-              ></iframe>
+              <div style={{ width: "100%", display: "flex", justifyContent: "center" }} ref={iframeRef}>
+                <iframe
+                  style={{
+                    top: 0,
+                    position: "absolute",
+                    zIndex: 1000,
+                    margin: "auto",
+                    backgroundColor: "gray",
+                  }}
+                  src={iframeUrl}
+                  title="Achievement"
+                  width="80%"
+                  height="100%"
+                ></iframe>
               </div>
-            
+
             )}
             <Header />
             <Greeting />
@@ -102,6 +102,8 @@ const Main = () => {
             <StackProgress />
             <Education />
 
+            <WorkExperience />
+            <Achievement />
             <Projects />
             <StartupProject />
             <div
@@ -113,7 +115,7 @@ const Main = () => {
                 alignItems: "center"
               }}
             >
-              <h1 className="project-heading" style={{paddingBottom: "20px"}}>
+              <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
                 Days I <strong className="purple">Code</strong>
               </h1>
               <GitHubCalendar
@@ -125,8 +127,6 @@ const Main = () => {
               />
             </div>
 
-            <WorkExperience />
-            <Achievement />
             <Blogs />
             <Talks />
             <Twitter />

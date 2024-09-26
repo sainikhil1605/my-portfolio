@@ -203,8 +203,9 @@ const workExperiences = {
       descBullets: [
         "Utilized ASP.NET Core and SQL Server to develop a movie ticket booking system, achieving a 50% reduction in ticket processing time through the implementation of optimized database queries and efficient API endpoints.",
         "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development.",
-        "Developed and maintained unit and integration tests using xUnit and Moq, ensuring high code quality and reducing bugs by 40% in the production environment."
-    }
+        "Developed and maintained unit and integration tests using xUnit and Moq, ensuring high code quality and reducing bugs by 40% in the production environment.",
+      ],
+    },
   ]
 };
 

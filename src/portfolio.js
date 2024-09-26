@@ -177,9 +177,9 @@ const workExperiences = {
       desc: "Houston, TX",
       date: "May 2024 - Present",
       descBullets: [
-        'Architected API wrappers with Node.js(Express.js). Implemented a CI/CD pipeline with AWS CodeCommit and AWS CodePipline, reducing deployment times by 30%',
-        'Established a serverless backend infrastructure using AWS Amplify and AWS Cognito for user authentication and dashboards, enhancing system scalability and reducing operational costs by 15%.',
-        'Spearheaded the development of applications for leading energy providers using TypeScript and Next.js, incorporating libraries like MaterialUI, TailwindCSS, Styled Components, and Umi.js, which boosted development efficiency by 20%.'
+        'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
+        'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',
+        'Architected APIs using ASP.NET Web API and integrated them with MS SQL Server using Entity Framework Core and LINQ. Implemented a CI/CD pipeline with Azure DevOps, reducing deployment times by 30%.'
       ]
     },
     {
@@ -190,7 +190,7 @@ const workExperiences = {
       desc: "Hyderabad, India",
       descBullets: [
         "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
-        "Enhanced the accessibility of the UI elements by migrating the webApp from legacy frameworks to the Material UI."
+        "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
       ]
     },
 
@@ -201,10 +201,9 @@ const workExperiences = {
       date: "Apr 2020 – Apr 2021",
       desc: "Hyderabad, India",
       descBullets: [
-        "Utilized ASP.NET Core and SQL Server to develop a movie ticket booking system, achieving a 50% reduction in ticket processing time through the implementation of optimized database queries and efficient API endpoints",
-        "Teamed up in the design and execution of a Producer-Consumer application via Azure Service Bus, achieving a 50% enhancement in data processing efficiency",
-        "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development and problem-solving skills."
-      ]
+        "Utilized ASP.NET Core and SQL Server to develop a movie ticket booking system, achieving a 50% reduction in ticket processing time through the implementation of optimized database queries and efficient API endpoints.",
+        "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development.",
+        "Developed and maintained unit and integration tests using xUnit and Moq, ensuring high code quality and reducing bugs by 40% in the production environment."
     }
   ]
 };

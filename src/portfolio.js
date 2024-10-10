@@ -177,9 +177,9 @@ const workExperiences = {
       desc: "Houston, TX",
       date: "May 2024 - Present",
       descBullets: [
-        'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
-        'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',
-        'Architected APIs using ASP.NET Web API and integrated them with MS SQL Server using Entity Framework Core and LINQ. Implemented a CI/CD pipeline with Azure DevOps, reducing deployment times by 30%.'
+        // 'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
+        // 'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',
+        // 'Architected APIs using ASP.NET Web API and integrated them with MS SQL Server using Entity Framework Core and LINQ. Implemented a CI/CD pipeline with Azure DevOps, reducing deployment times by 30%.'
       ]
     },
     {
@@ -189,8 +189,8 @@ const workExperiences = {
       date: "Apr 2021 – Jul 2022",
       desc: "Hyderabad, India",
       descBullets: [
-        "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
-        "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
+        // "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
+        // "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
       ]
     },
 
@@ -201,9 +201,9 @@ const workExperiences = {
       date: "Apr 2020 – Apr 2021",
       desc: "Hyderabad, India",
       descBullets: [
-        "Utilized ASP.NET Core and SQL Server to develop a movie ticket booking system, achieving a 50% reduction in ticket processing time through the implementation of optimized database queries and efficient API endpoints.",
-        "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development.",
-        "Developed and maintained unit and integration tests using xUnit and Moq, ensuring high code quality and reducing bugs by 40% in the production environment.",
+        // "Utilized ASP.NET Core and SQL Server to develop a movie ticket booking system, achieving a 50% reduction in ticket processing time through the implementation of optimized database queries and efficient API endpoints.",
+        // "Achieved 1st place in a coding competition among 1000 interns, showcasing proficiency in backend development.",
+        // "Developed and maintained unit and integration tests using xUnit and Moq, ensuring high code quality and reducing bugs by 40% in the production environment.",
       ],
     },
   ]

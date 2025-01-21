@@ -23,7 +23,7 @@ const greeting = {
   username: "Sai Nikhil Reddy Vatti",
   title: "Hi all, I'm Sai Nikhil Reddy Vatti",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with C#, ASP.Net, JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with C#, .Net Core, JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://my-resume-1605.s3.amazonaws.com/Sai-Nikhil-Reddy-Vatti-Resume.pdf", // Set to empty to hide the button
@@ -171,11 +171,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineer-1",
+      company: "GEICO",
+      companylogo: require("./assets/images/GEICO-Logo.png"),
+      desc: "Houston, TX",
+      date: "Dec 2024 - Present",
+      descBullets: [
+        // 'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
+        // 'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',
+        // 'Architected APIs using ASP.NET Web API and integrated them with MS SQL Server using Entity Framework Core and LINQ. Implemented a CI/CD pipeline with Azure DevOps, reducing deployment times by 30%.'
+      ]
+    },
+    {
       role: "Full Stack Developer",
       company: "eIQdigital",
       companylogo: require("./assets/images/eiqdigital.jpeg"),
       desc: "Houston, TX",
-      date: "May 2024 - Present",
+      date: "May 2024 - Dec 2024",
       descBullets: [
         // 'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
         // 'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',
@@ -187,6 +199,17 @@ const workExperiences = {
       company: "Sureify",
       companylogo: require("./assets/images/sureify.jpg"),
       date: "Apr 2021 – Jul 2022",
+      desc: "Hyderabad, India",
+      descBullets: [
+        // "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
+        // "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
+      ]
+    },
+    {
+      role: "Software Associate",
+      company: "Perfexion Technologies",
+      // companylogo: require("./assets/images/sureify.jpg"),
+      date: "Apr 2020 – Apr 2021",
       desc: "Hyderabad, India",
       descBullets: [
         // "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",

@@ -281,7 +281,7 @@ const chromeExtensions = {
       image: require("./assets/images/applyEase.png"),
       projectName: "Apply Ease",
       projectDesc:
-        "A chrome extension that can autofill the job application form with user's details and for custom questions such as 'Why are you interested in this company?', the extension sends the job description and application question to the Node server. There, it parses the user's resume and sends both the resume and the questions to the OpenAI API to generate a tailored answer, which is then autofilled in the text area. With customizable rules and real-time notifications, CodeSage enhances development efficiency and maintains high coding standards.",
+        "Privacy-first Chrome extension with React and FastAPI that auto-fills job applications and generates tailored responses using local LLMs (Ollama/LM Studio), eliminating reliance on paid APIs.",
       projectLink: {
         name: "View Code",
         url: "https://github.com/sainikhil1605/codesage"

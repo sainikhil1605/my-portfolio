@@ -106,7 +106,7 @@ const Main = () => {
             <Achievement />
             <Projects />
             <StartupProject />
-            <div
+            {/* <div
               style={{
                 marginTop: "50px",
                 display: "flex",
@@ -125,7 +125,7 @@ const Main = () => {
                 color="#c084f5"
                 fontSize={16}
               />
-            </div>
+            </div> */}
 
             <Blogs />
             <Talks />

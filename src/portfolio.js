@@ -171,11 +171,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer-1",
+      role: "Engineer-2",
       company: "GEICO",
       companylogo: require("./assets/images/GEICO-Logo.png"),
       desc: "Houston, TX",
-      date: "Dec 2024 - Present",
+      date: "March 2025 - Present",
+      descBullets: [
+        // 'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
+        // 'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',
+        // 'Architected APIs using ASP.NET Web API and integrated them with MS SQL Server using Entity Framework Core and LINQ. Implemented a CI/CD pipeline with Azure DevOps, reducing deployment times by 30%.'
+      ]
+    },
+    {
+      role: "Engineer-1",
+      company: "GEICO",
+      companylogo: require("./assets/images/GEICO-Logo.png"),
+      desc: "Houston, TX",
+      date: "Dec 2024 - March 2025",
       descBullets: [
         // 'Spearheaded the development of applications for leading energy providers using C# and .NET Core, incorporating frameworks like ASP.NET MVC, Blazor, and Entity Framework, which boosted development efficiency by 20%.',
         // 'Containerized the application using Docker and orchestrated deployment with Kubernetes, ensuring scalable and efficient management of microservices.',

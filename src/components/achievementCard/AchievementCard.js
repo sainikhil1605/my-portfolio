@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, {useContext} from "react";
 import "./AchievementCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -11,7 +11,7 @@ export default function AchievementCard({cardInfo, isDark}) {
     var win = window.open(url, "_blank");
     win.focus();
   }
-  const {setShowIframe,setIframeUrl}=useContext(StyleContext)
+  const {setShowIframe, setIframeUrl} = useContext(StyleContext);
   return (
     <>
       <div

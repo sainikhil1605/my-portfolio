@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
+import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
 import {
@@ -14,14 +14,14 @@ import Loading from "../../containers/loading/Loading";
 // import response from "../../";
 import response from "../../assets/profile.json";
 export default function Projects() {
-  const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
+  const GithubRepoCard = lazy(
+    () => import("../../components/githubRepoCard/GithubRepoCard")
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
   // todo: remove useContex because is not supported
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   const imgRef = React.createRef();
   useEffect(() => {
     const getRepoData = () => {
@@ -110,7 +110,6 @@ export default function Projects() {
                         {app.projectLink.name}
                       </span>
                     </div>
-
                   </div>
                 </div>
               );

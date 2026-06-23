@@ -4,8 +4,8 @@ import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
 import response from "../../assets/profile.json";
 const renderLoader = () => <Loading />;
-const GithubProfileCard = lazy(() =>
-  import("../../components/githubProfileCard/GithubProfileCard")
+const GithubProfileCard = lazy(
+  () => import("../../components/githubProfileCard/GithubProfileCard")
 );
 export default function Profile() {
   const [prof, setrepo] = useState([]);

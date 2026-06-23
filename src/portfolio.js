@@ -217,17 +217,17 @@ const workExperiences = {
         // "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
       ]
     },
-    {
-      role: "Software Associate",
-      company: "Perfexion Technologies",
-      // companylogo: require("./assets/images/sureify.jpg"),
-      date: "Apr 2020 – Apr 2021",
-      desc: "Hyderabad, India",
-      descBullets: [
-        // "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
-        // "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
-      ]
-    },
+    // {
+    //   role: "Software Associate",
+    //   company: "Perfexion Technologies",
+    //   // companylogo: require("./assets/images/sureify.jpg"),
+    //   date: "Apr 2020 – Apr 2021",
+    //   desc: "Hyderabad, India",
+    //   descBullets: [
+    //     // "Developed complex multi-page features like beneficiary management, payments, account updates, dashboard and few other pages using ReactJs and Redux",
+    //     // "Led the development of payment features and ensured cross-browser compatibility, resulting in a 30% increase in user engagement."
+    //   ]
+    // },
 
   ]
 };
